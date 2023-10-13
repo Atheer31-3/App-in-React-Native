@@ -9,6 +9,7 @@ import TemplatePage from './screens/templatepage';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { AntDesign } from '@expo/vector-icons';
+import EventDescription from './screens/EventDescription';
 
 
 const Tab = createBottomTabNavigator();
@@ -36,7 +37,7 @@ function MyTabs() {
         tabBarInactiveTintColor: 'gray',
         headerShown: true
       })}
-    >       
+    >
       <Tab.Screen name="Profile" component={ProfilePage} />
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="My Events" component={MyEventPage} />
@@ -47,15 +48,19 @@ function MyTabs() {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown:false}}>
-        <Stack.Screen name="home" component={MyTabs}/>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="home" component={MyTabs} screenOptions={{ headerShown: false }} />
 
-        <Stack.Screen name="Home" component={HomeScreen}  />
-        <Stack.Screen name="Profile" component={ProfilePage} />
-        <Stack.Screen name="My Events" component={MyEventPage} />
-        <Stack.Screen name="Template" component={TemplatePage} />
+        <Stack.Screen name="Home" component={HomeScreen} screenOptions={{ headerShown: false }} />
+        <Stack.Screen name="Profile" component={ProfilePage} screenOptions={{ headerShown: false }} />
+        <Stack.Screen name="My Events" component={MyEventPage} screenOptions={{ headerShown: false }} />
+        <Stack.Screen name="Template" component={TemplatePage} screenOptions={{ headerShown: false }} />
 
-      </Stack.Navigator>   
+        <Stack.Screen name="EventDescription" component={EventDescription}
+    options={{ headerShown: true }}
+        />
+
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
