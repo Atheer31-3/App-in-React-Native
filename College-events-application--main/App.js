@@ -49,15 +49,15 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="home" component={MyTabs} screenOptions={{ headerShown: false }} />
+        <Stack.Screen name="home" component={MyTabs} />
 
-        <Stack.Screen name="Home" component={HomeScreen} screenOptions={{ headerShown: false }} />
-        <Stack.Screen name="Profile" component={ProfilePage} screenOptions={{ headerShown: false }} />
-        <Stack.Screen name="My Events" component={MyEventPage} screenOptions={{ headerShown: false }} />
-        <Stack.Screen name="Template" component={TemplatePage} screenOptions={{ headerShown: false }} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Profile" component={ProfilePage} />
+        <Stack.Screen name="My Events" component={MyEventPage} />
+        <Stack.Screen name="Template" component={TemplatePage} />
 
         <Stack.Screen name="EventDescription" component={EventDescription}
-    options={{ headerShown: true }}
+          options={{ headerShown: true }}
         />
 
       </Stack.Navigator>
