@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "JoudUNIMD",
+    "slug": "JoudUNIMD",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "JoudUNIMD"
+}
