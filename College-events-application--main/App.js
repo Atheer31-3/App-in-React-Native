@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './screens/homepage';
-import ProfilePage from './screens/profilepage';
+import ProfilePage from './screens/ProfilePage';
 import MyEventPage from './screens/myeventpage';
 import TemplatePage from './screens/templatepage';
 

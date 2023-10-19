@@ -49,6 +49,6 @@ const EventRequest = ({ event }) => {
     )
 }
 
-// export default EventRequest
+export default EventRequest
 
 const styles = StyleSheet.create({})
